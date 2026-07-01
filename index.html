@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ゆいまーる商店（さくら労働組合オンラインショップ）ご案内 | Plus Canna株式会社</title>
+<style>
+  :root {
+    --blue:      #0284C7;
+    --blue-l:    #38BDF8;
+    --blue-pale: #EFF6FF;
+    --amber:     #F59E0B;
+    --amber-l:   #FEF3C7;
+    --teal:      #0D9488;
+    --sky:       #E0F2FE;
+    --white:     #FFFFFF;
+    --dark:      #0F172A;
+    --gray:      #475569;
+    --border:    #BAE6FD;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', 'Yu Gothic', sans-serif;
+    background: #F8FBFF;
+    color: var(--dark);
+    line-height: 1.8;
+    font-size: 15px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* ======= COVER ======= */
+  .cover {
+    background: linear-gradient(135deg, #0EA5E9 0%, #0284C7 50%, #0369A1 100%);
+    color: #fff;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 72px 10%;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+  }
+
+  .cover::before {
+    content: '';
+    position: absolute;
+    right: -100px; top: -100px;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+    pointer-events: none;
+  }
+
+  .cover::after {
+    content: '';
+    position: absolute;
+    right: 80px; bottom: -80px;
+    width: 360px; height: 360px;
+    border-radius: 50%;
+    background: rgba(245,158,11,0.15);
+    pointer-events: none;
+  }
+
+  .cover-tag {
+    display: inline-block;
+    background: rgba(245,158,11,0.25);
+    border: 1px solid rgba(245,158,11,0.5);
+    color: #FDE68A;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 28px;
+    width: fit-content;
+  }
+
+  .cover h1 {
+    font-size: clamp(24px, 5vw, 52px);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+
+  .cover h1 em {
+    font-style: normal;
+    color: #FDE68A;
+  }
+
+  .cover-desc {
+    font-size: clamp(14px, 2vw, 18px);
+    color: rgba(255,255,255,0.82);
+    font-weight: 300;
+    margin-bottom: 40px;
+    max-width: 500px;
+    line-height: 1.8;
+  }
+
+  .cover-company {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    width: fit-content;
+  }
+
+  /* ======= INDEX ======= */
+  .index {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 56px 40px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .index h2 {
+    font-size: 20px;
+    color: var(--blue);
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  .index-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    list-style: none;
+  }
+
+  .index-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    background: var(--sky);
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--gray);
+  }
+
+  .index-list li span {
+    font-weight: 700;
+    color: var(--blue);
+    font-size: 12px;
+    background: var(--blue-pale);
+    border-radius: 4px;
+    padding: 2px 7px;
+    flex-shrink: 0;
+  }
+
+  /* ======= SECTIONS ======= */
+  .section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    border-bottom: 1px solid var(--border);
+    page-break-inside: avoid;
+  }
+
+  .sec-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--amber);
+    margin-bottom: 8px;
+  }
+
+  .section h2 {
+    font-size: clamp(19px, 3vw, 30px);
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 10px;
+    line-height: 1.35;
+  }
+
+  .section-lead {
+    color: var(--gray);
+    font-size: 14px;
+    margin-bottom: 28px;
+    line-height: 1.8;
+  }
+
+  /* ======= CARD GRID ======= */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+
+  .card {
+    background: var(--white);
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    padding: 22px;
+  }
+
+  .card-icon {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+
+  .card p {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.75;
+  }
+
+  /* ======= FLOW ======= */
+  .flow { display: flex; flex-direction: column; margin-top: 8px; }
+
+  .flow-item { display: flex; gap: 16px; align-items: flex-start; }
+
+  .flow-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 44px;
+    flex-shrink: 0;
+  }
+
+  .step-num {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--blue);
+    color: #fff;
+    font-weight: 700; font-size: 16px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .step-line {
+    width: 2px; flex: 1; min-height: 20px;
+    background: #BFDBFE;
+    margin: 2px 0;
+  }
+
+  .flow-item:last-child .step-line { display: none; }
+
+  .flow-body {
+    background: var(--white);
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    padding: 15px 18px;
+    flex: 1;
+    margin-bottom: 10px;
+  }
+
+  .flow-body h4 { font-size: 14px; font-weight: 700; color: var(--blue); margin-bottom: 4px; }
+  .flow-body p  { font-size: 13px; color: var(--gray); }
+
+  .flow-note {
+    background: var(--amber-l);
+    border: 1.5px solid #FCD34D;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #92400E;
+    margin-top: 8px;
+  }
+
+  /* ======= MONEY CHAIN ======= */
+  .money-chain {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+  }
+
+  .m-entity {
+    background: var(--white);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    padding: 13px 16px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--dark);
+    text-align: center;
+    min-width: 100px;
+    flex-shrink: 0;
+    line-height: 1.4;
+  }
+
+  .m-entity.me {
+    background: var(--blue);
+    border-color: var(--blue);
+    color: #fff;
+  }
+
+  .m-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 0 6px;
+    min-width: 60px;
+  }
+
+  .m-arrow-label {
+    font-size: 10px;
+    color: var(--amber);
+    font-weight: 700;
+    margin-bottom: 3px;
+    text-align: center;
+    line-height: 1.3;
+    white-space: nowrap;
+  }
+
+  .m-arrow-line {
+    height: 2px;
+    background: linear-gradient(to right, var(--border), var(--amber));
+    width: 100%;
+    position: relative;
+  }
+
+  .m-arrow-line::after {
+    content: '▶';
+    position: absolute;
+    right: -7px; top: -7px;
+    font-size: 10px;
+    color: var(--amber);
+  }
+
+  /* ======= INFO / WARN BOX ======= */
+  .info-box {
+    background: var(--blue-pale);
+    border-left: 4px solid var(--blue);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.8;
+  }
+  .info-box strong { color: var(--blue); }
+
+  .warn-box {
+    background: #FFFBEB;
+    border-left: 4px solid var(--amber);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #78350F;
+    line-height: 1.75;
+  }
+
+  /* ======= TEMPLATE / SETTLEMENT ======= */
+  .template-wrap { margin-top: 24px; }
+
+  .template-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--blue);
+    margin-bottom: 8px;
+  }
+
+  .template-box {
+    background: var(--sky);
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 28px;
+    font-size: 13.5px;
+    line-height: 2;
+    color: var(--dark);
+    white-space: pre-line;
+    overflow-x: auto;
+  }
+
+  .template-box .t-em {
+    background: #DBEAFE;
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-weight: 700;
+    color: var(--blue);
+  }
+
+  .template-box .t-fill { color: #9CA3AF; font-style: italic; }
+
+  .settlement-box {
+    background: #F0FDF4;
+    border: 1.5px solid #86EFAC;
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin-top: 24px;
+    font-size: 13.5px;
+    line-height: 2;
+    white-space: pre-line;
+    overflow-x: auto;
+  }
+
+  .settlement-box .s-em { font-weight: 700; color: #166534; }
+
+  /* ======= EXCEPTION TABLE ======= */
+  .ex-table-wrap { margin-top: 24px; }
+
+  .ex-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+  }
+
+  .ex-table th {
+    background: var(--blue);
+    color: #fff;
+    padding: 13px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  .ex-table th:first-child { border-radius: 8px 0 0 0; }
+  .ex-table th:last-child  { border-radius: 0 8px 0 0; }
+
+  .ex-table td {
+    padding: 13px 16px;
+    border-bottom: 1px solid #E2E8F0;
+    vertical-align: top;
+  }
+
+  .ex-table tr:nth-child(even) td { background: var(--sky); }
+
+  .ex-table td:first-child {
+    font-weight: 700;
+    color: var(--blue);
+    white-space: nowrap;
+    width: 160px;
+  }
+
+  /* ======= PRINCIPLES ======= */
+  .principle-list { display: flex; flex-direction: column; gap: 12px; margin-top: 8px; }
+
+  .p-item {
+    display: flex;
+    gap: 14px;
+    background: var(--white);
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    align-items: flex-start;
+  }
+
+  .p-num {
+    width: 34px; height: 34px;
+    border-radius: 9px;
+    background: var(--amber);
+    color: #fff;
+    font-weight: 700; font-size: 15px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .p-body h4 { font-size: 14px; font-weight: 700; color: var(--dark); margin-bottom: 5px; }
+  .p-body p  { font-size: 13px; color: var(--gray); line-height: 1.75; }
+
+  /* ======= NOTICE BOX ======= */
+  .notice-box {
+    background: #FFF7ED;
+    border: 2.5px solid #F97316;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .notice-title {
+    background: #F97316;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 14px 24px;
+    letter-spacing: 0.3px;
+  }
+
+  .notice-body {
+    padding: 22px 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .notice-body > p { font-size: 14px; color: var(--dark); line-height: 1.8; }
+
+  .notice-rule {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .notice-rule-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .notice-rule-item.bad  { background: #FEF2F2; border: 1.5px solid #FECACA; color: #7F1D1D; }
+  .notice-rule-item.good { background: #F0FDF4; border: 1.5px solid #86EFAC; color: #14532D; }
+
+  .rule-icon { font-size: 18px; font-weight: 900; flex-shrink: 0; line-height: 1; margin-top: 2px; }
+  .notice-rule-item.bad  .rule-icon { color: #DC2626; }
+  .notice-rule-item.good .rule-icon { color: #16A34A; }
+
+  .notice-sub {
+    font-size: 13px;
+    color: #78350F;
+    background: #FFFBEB;
+    border: 1px solid #FCD34D;
+    border-radius: 8px;
+    padding: 12px 16px;
+    line-height: 1.8;
+  }
+
+  /* ======= CONTACT ======= */
+  .contact-hero {
+    background: linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%);
+    border-radius: 16px;
+    padding: 44px 40px;
+    text-align: center;
+    color: #fff;
+    margin-top: 24px;
+  }
+
+  .contact-hero h3 { font-size: 21px; font-weight: 700; margin-bottom: 8px; }
+  .contact-hero > p { color: rgba(255,255,255,0.8); font-size: 14px; margin-bottom: 28px; }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 440px;
+    margin: 0 auto 28px;
+    text-align: left;
+  }
+
+  .c-item {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 10px;
+    padding: 13px 15px;
+  }
+
+  .c-item .c-label { font-size: 10px; letter-spacing: 2px; color: #FDE68A; font-weight: 700; margin-bottom: 4px; }
+  .c-item .c-val   { font-size: 13px; font-weight: 500; }
+
+  .contact-close { font-size: 15px; color: rgba(255,255,255,0.9); line-height: 1.7; }
+
+  /* ======= NEXT STEPS ======= */
+  .next-steps { display: flex; flex-direction: column; gap: 10px; margin-top: 22px; }
+
+  .next-step {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    background: var(--white);
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 14px;
+  }
+
+  .ns-num {
+    background: var(--teal);
+    color: #fff;
+    border-radius: 50%;
+    width: 28px; height: 28px;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 13px;
+    flex-shrink: 0;
+  }
+
+  /* ======================================================
+     RESPONSIVE — TABLET (max 768px)
+  ====================================================== */
+  @media (max-width: 768px) {
+    .index { padding: 48px 28px; }
+    .section { padding: 52px 28px; }
+  }
+
+  /* ======================================================
+     RESPONSIVE — MOBILE (max 600px)
+  ====================================================== */
+  @media (max-width: 600px) {
+    body { font-size: 14px; }
+
+    /* Cover */
+    .cover { min-height: auto; padding: 56px 6% 64px; }
+    .cover-desc { font-size: 14px; }
+    .cover-desc br { display: none; }
+    .cover-tag { font-size: 11px; letter-spacing: 1px; }
+
+    /* Layout */
+    .index   { padding: 40px 16px; }
+    .section { padding: 44px 16px; }
+    .index-list { grid-template-columns: 1fr; }
+
+    /* Cards */
+    .card-grid { grid-template-columns: 1fr; }
+
+    /* Money chain → vertical */
+    .money-chain {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+    .m-entity { width: 100%; max-width: 280px; }
+    .m-arrow {
+      flex-direction: column;
+      align-items: center;
+      padding: 4px 0;
+      min-width: auto;
+      flex: none;
+    }
+    .m-arrow-label { white-space: normal; text-align: center; margin-bottom: 3px; }
+    .m-arrow-line {
+      width: 2px;
+      height: 28px;
+      background: linear-gradient(to bottom, var(--border), var(--amber));
+    }
+    .m-arrow-line::after {
+      content: '▼';
+      right: auto;
+      left: -4px;
+      top: auto;
+      bottom: -10px;
+    }
+
+    /* Template / settlement → scroll */
+    .template-box,
+    .settlement-box {
+      font-size: 12px;
+      padding: 16px;
+      line-height: 1.8;
+    }
+
+    /* Exception table → card style */
+    .ex-table thead { display: none; }
+    .ex-table, .ex-table tbody, .ex-table tr, .ex-table td {
+      display: block;
+      width: 100%;
+    }
+    .ex-table tr {
+      margin-bottom: 12px;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .ex-table td { white-space: normal; }
+    .ex-table td:first-child {
+      background: var(--blue);
+      color: #fff;
+      font-size: 13px;
+      padding: 10px 14px;
+      border-radius: 0;
+      width: 100%;
+    }
+    .ex-table td:last-child {
+      padding: 12px 14px;
+      font-size: 13px;
+      background: #fff;
+    }
+    .ex-table tr:nth-child(even) td:last-child { background: var(--sky); }
+    .ex-table tr:nth-child(even) td:first-child { background: var(--blue); color: #fff; }
+
+    /* Notice */
+    .notice-rule { grid-template-columns: 1fr; }
+    .notice-body { padding: 16px; }
+    .notice-title { font-size: 14px; padding: 12px 16px; }
+
+    /* Contact */
+    .contact-hero { padding: 28px 16px; }
+    .contact-grid { grid-template-columns: 1fr; max-width: 100%; }
+  }
+
+  /* ======================================================
+     PRINT
+  ====================================================== */
+  @media print {
+    body { background: #fff; font-size: 13px; }
+    .cover { min-height: auto; padding: 56px 8%; }
+    .section { padding: 44px 32px; }
+    .section + .section { page-break-before: always; border-top: none; }
+    .index { padding: 40px 32px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== COVER ===== -->
+<div class="cover">
+  <div class="cover-tag">お取引先様向けご案内資料 2026年版</div>
+  <h1>
+    <em>さくら労働組合</em><br>
+    オンラインショップ<br>
+    お取引のご案内
+  </h1>
+  <div class="cover-desc">
+    本資料は、弊社とお取引いただく事業者様・担当者様に向けて、業務の流れや仕組みをわかりやすくまとめたものです。
+  </div>
+  <div class="cover-company">
+    Plus Canna株式会社 ／ 担当者一同
+  </div>
+</div>
+
+<!-- ===== INDEX ===== -->
+<div class="index">
+  <h2>目次</h2>
+  <ul class="index-list">
+    <li><span>01</span> 私たちについて</li>
+    <li><span>02</span> お取引の仕組み</li>
+    <li><span>03</span> お金の流れ</li>
+    <li><span>04</span> 発送依頼の方法</li>
+    <li><span>05</span> 月次精算の仕組み</li>
+    <li><span>06</span> 困ったときは</li>
+    <li><span>07</span> 私たちが大切にしていること</li>
+    <li><span>08</span> お問い合わせ・次のステップ</li>
+  </ul>
+</div>
+
+<!-- ===== 01. 私たちについて ===== -->
+<div class="section">
+  <div class="sec-label">SECTION 01</div>
+  <h2>私たちについて</h2>
+  <p class="section-lead">Plus Canna株式会社は、さくら労働組合の会員様向けオンラインショッピングサービスに「ゆいまーる商店」として出店しています。沖縄の事業者様の商品を、全国の会員様へお届けすることを使命としています。</p>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon">🏢</div>
+      <h3>Plus Canna株式会社</h3>
+      <p>ゆいまーる商店（さくら労働組合オンラインショップ）の出店・運営を行う会社です。仕入れ・受注管理・お客様対応・精算まで、一括して弊社が担います。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🛍️</div>
+      <h3>ゆいまーる商店<br>（さくら労働組合OL）</h3>
+      <p>弊社（Plus Canna株式会社）は、さくら労働組合の会員様向けオンラインショッピングサービスに「ゆいまーる商店」として出店しています。会員様向けに、沖縄の厳選商品を特別価格でお届けしています。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">👥</div>
+      <h3>ご利用のお客様</h3>
+      <p>ご利用いただくお客様は、ガン共済に加入されている方が中心です。健康や食への関心が高く、安心・安全な商品を求めている方が多くいらっしゃいます。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🌺</div>
+      <h3>目指す姿</h3>
+      <p>取扱事業者様を今後も拡大してまいります。沖縄の魅力を広く発信し、沖縄の事業者様の商品が県内・県外に流通する仕組みを一緒につくってまいります。<br><br>また、ご参加いただく事業者様お一人おひとりの魅力的な商品をより多くのお客様へお届けできるよう、販路拡大のお手伝いをさせていただきたいと思っています。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 02. お取引の仕組み ===== -->
+<div class="section">
+  <div class="sec-label">SECTION 02</div>
+  <h2>お取引の仕組み</h2>
+  <p class="section-lead">弊社は商品を在庫として持ちません。お客様からご注文が入ると、弊社が御社へ発送指示をお送りし、御社から直接お客様へ発送していただく形です（ドロップシッピング型）。</p>
+
+  <div class="flow">
+    <div class="flow-item">
+      <div class="flow-left"><div class="step-num">1</div><div class="step-line"></div></div>
+      <div class="flow-body">
+        <h4>お客様が注文</h4>
+        <p>ゆいまーる商店（さくら労働組合オンラインショップ）にお客様からご注文が入ります。</p>
+      </div>
+    </div>
+    <div class="flow-item">
+      <div class="flow-left"><div class="step-num">2</div><div class="step-line"></div></div>
+      <div class="flow-body">
+        <h4>弊社が注文を確認・振り分け</h4>
+        <p>弊社が注文内容を確認し、どの商品か・どちらの事業者様へ依頼するかを特定します。</p>
+      </div>
+    </div>
+    <div class="flow-item">
+      <div class="flow-left"><div class="step-num">3</div><div class="step-line"></div></div>
+      <div class="flow-body">
+        <h4>弊社から御社へ発送指示メールをお送り</h4>
+        <p>あらかじめご指定いただいたメールアドレスに、発送指示書をお送りします。お届け先・商品・数量・発送期限が記載されています。</p>
+        <div class="flow-note">📧 LINEでのやり取りは行っておりません。メールのみとなります。</div>
+      </div>
+    </div>
+    <div class="flow-item">
+      <div class="flow-left"><div class="step-num">4</div><div class="step-line"></div></div>
+      <div class="flow-body">
+        <h4>御社からお客様へ直送</h4>
+        <p>指示書の内容に従って、お客様へ直接発送してください。梱包・配送は御社にお任せします。</p>
+      </div>
+    </div>
+    <div class="flow-item">
+      <div class="flow-left"><div class="step-num">5</div></div>
+      <div class="flow-body">
+        <h4>送り状番号をメールでご返信ください</h4>
+        <p>発送が完了しましたら、送り状番号を弊社宛にご返信ください。弊社がお客様へ発送通知をお送りします。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <strong>御社にお願いすることはこの2つだけです：</strong><br>
+    ① 発送指示書の内容に従って商品を発送すること<br>
+    ② 発送後に送り状番号をメールでご返信いただくこと
+  </div>
+</div>
+
+<!-- ===== 03. お金の流れ ===== -->
+<div class="section">
+  <div class="sec-label">SECTION 03</div>
+  <h2>お金の流れ</h2>
+  <p class="section-lead">御社から請求書をいただく必要はありません。弊社が毎月「精算報告書」を作成してお送りし、卸値（仕入れ価格）を御社の口座へ振り込む形です。</p>
+
+  <div class="money-chain">
+    <div class="m-entity">お客様</div>
+    <div class="m-arrow">
+      <div class="m-arrow-label">販売価格でお支払い</div>
+      <div class="m-arrow-line"></div>
+    </div>
+    <div class="m-entity">ゆいまーる商店<br>（さくら労組OL）</div>
+    <div class="m-arrow">
+      <div class="m-arrow-label">手数料を引いて入金</div>
+      <div class="m-arrow-line"></div>
+    </div>
+    <div class="m-entity me">Plus Canna<br>株式会社</div>
+    <div class="m-arrow">
+      <div class="m-arrow-label">卸値を振込</div>
+      <div class="m-arrow-line"></div>
+    </div>
+    <div class="m-entity">御社</div>
+  </div>
+
+  <div class="info-box" style="margin-top: 28px;">
+    <strong>精算のポイント：</strong><br>
+    ・毎月末に弊社が集計し、翌月中に御社の口座へ振り込みます<br>
+    ・請求書の作成は不要です。弊社からの精算報告書をご確認いただくだけです<br>
+    ・精算が遅れる場合は、必ず事前にご連絡します
+  </div>
+</div>
+
+<!-- ===== 04. 発送依頼の方法 ===== -->
+<div class="section">
+  <div class="sec-label">SECTION 04</div>
+  <h2>発送依頼の方法</h2>
+  <p class="section-lead">ご注文が入るたびに、弊社から下記のフォーマットで発送指示メールをお送りします。毎回同じ形式ですので、慣れると簡単です。</p>
+
+  <div class="template-wrap">
+    <div class="template-label">▼ 発送指示メール（テンプレート）</div>
+    <div class="template-box">
+<span class="t-fill">件名：</span><span class="t-em">【ゆいまーる商店】発送のご依頼 / 注文ID：YM-2026-XXXX-001</span>
+
+<span class="t-fill">○○農園 ご担当者様</span>
+
+いつもお世話になっております。Plus Canna株式会社です。
+新しいご注文が入りましたので、発送をお願いします。
+
+━━━━━━━━━━━━━━━━━━━━━━
+<span class="t-em">■ 注文ID　　：YM-2026-XXXX-001</span>
+■ 商品名　　：完熟マンゴー 1kg × 1箱
+■ お届け先　：
+　　山田 花子 様
+　　〒150-0001 東京都渋谷区神宮前1-1-1
+　　TEL：090-XXXX-XXXX
+■ 配送方法　：冷蔵便
+<span class="t-em">■ 発送期限　：○月○日（○）まで</span>
+━━━━━━━━━━━━━━━━━━━━━━
+
+発送が完了しましたら、<span class="t-em">このメールに送り状番号をご返信ください。</span>
+
+どうぞよろしくお願いいたします。
+
+Plus Canna株式会社
+担当：○○　／　メール：pluscanna.inc@gmail.com</div>
+  </div>
+
+  <div class="warn-box">
+    ⚠️ 在庫切れ・発送が難しい場合は、すぐにこのメールへご返信ください。弊社がお客様への対応をすべて行います。
+  </div>
+</div>
+
+<!-- ===== 05. 月次精算の仕組み ===== -->
+<div class="section">
+  <div class="sec-label">SECTION 05</div>
+  <h2>月次精算の仕組み</h2>
+  <p class="section-lead">毎月末に弊社が精算報告書を作成してお送りします。内容をご確認いただくだけで完了です。請求書の作成・送付は不要です。</p>
+
+  <div class="template-label" style="margin-top: 8px;">▼ 精算報告書（見本）</div>
+  <div class="settlement-box">
+<span class="s-em">○○農園 ご担当者様</span>
+
+いつもお世話になっております。Plus Canna株式会社です。
+今月もありがとうございました。下記のとおり精算をご報告します。
+
+2026年○月分　売上精算書
+─────────────────────────────
+商品名              件数    卸値単価      小計
+─────────────────────────────
+完熟マンゴー 1kg     12件    ¥2,400      ¥28,800
+完熟マンゴー 2kg      5件    ¥4,200      ¥21,000
+─────────────────────────────
+<span class="s-em">ご入金額（合計）                           ¥49,800</span>
+─────────────────────────────
+
+上記を○月○日までに下記口座へお振り込みします。
+内容についてご不明な点があれば、お気軽にご連絡ください。
+
+引き続きどうぞよろしくお願いいたします。
+Plus Canna株式会社</div>
+
+  <div class="info-box">
+    <strong>精算サイクル：</strong>月末締め ／ 翌月中に御社口座へ振込<br>
+    <strong>ご確認いただくのは：</strong>件数・金額に誤りがないかどうかのみです
+  </div>
+</div>
+
+<!-- ===== 06. 困ったときは ===== -->
+<div class="section">
+  <div class="sec-label">SECTION 06</div>
+  <h2>困ったときは</h2>
+  <p class="section-lead">どんな状況でも、まずは弊社へご連絡ください。お客様への対応はすべてPlus Cannaが行います。御社がお客様に直接対応する必要はありません。</p>
+
+  <div class="ex-table-wrap">
+    <table class="ex-table">
+      <thead>
+        <tr>
+          <th>こんなとき</th>
+          <th>弊社の対応・お願いしたいこと</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>在庫切れ</td>
+          <td>すぐにメールでご連絡ください。弊社がお客様にキャンセルの連絡を入れます。御社からお客様へ直接連絡していただく必要はありません。</td>
+        </tr>
+        <tr>
+          <td>発送期限に間に合わない</td>
+          <td>事前にご連絡いただければ、弊社が先にお客様へお詫びの連絡を入れます。</td>
+        </tr>
+        <tr>
+          <td>商品が破損していた</td>
+          <td>お写真をメールでお送りください。配送会社への申告は弊社が行います。</td>
+        </tr>
+        <tr>
+          <td>天候・体調など突発的な事情</td>
+          <td>遠慮なくご連絡ください。一緒に対応策を考えます。</td>
+        </tr>
+        <tr>
+          <td>季節商品・品切れの見込み</td>
+          <td>終了の1〜2週間前にご一報ください。弊社が販売を停止します。</td>
+        </tr>
+        <tr>
+          <td>卸値・条件の変更相談</td>
+          <td>翌月以降の適用で調整します。既存のご注文は現行価格で処理します。</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ===== 07. 大切にしていること ===== -->
+<div class="section">
+  <div class="sec-label">SECTION 07</div>
+  <h2>私たちが大切にしていること</h2>
+  <p class="section-lead">御社との関係は、一回きりの取引ではありません。長くお付き合いできる仕組みをつくるために、以下のことを大切にしています。</p>
+
+  <div class="principle-list">
+    <div class="p-item">
+      <div class="p-num">1</div>
+      <div class="p-body">
+        <h4>御社の商品を、誠実にお客様へ伝えます</h4>
+        <p>「何が入っているか」ではなく、「誰がどんな思いで作ったか」をお客様に届けます。御社のこだわりや産地の魅力が、そのままお客様に伝わるような言葉で紹介します。</p>
+      </div>
+    </div>
+    <div class="p-item">
+      <div class="p-num">2</div>
+      <div class="p-body">
+        <h4>何か起きたとき、一緒に解決しましょう</h4>
+        <p>お客様への窓口は弊社が担いますが、御社と状況を共有しながら一緒に解決策を考えます。ゆいまーる商店を通じて同じ方向を向くパートナーとして、お互いに支え合える関係を大切にしていきたいと思っています。</p>
+      </div>
+    </div>
+    <div class="p-item">
+      <div class="p-num">3</div>
+      <div class="p-body">
+        <h4>何件売れたか、正直にお伝えします</h4>
+        <p>毎月の精算報告書には、商品ごとの販売件数・金額をすべて記載します。「実際どれくらい売れているのか」を包み隠さずご報告することが、信頼の基本だと考えています。</p>
+      </div>
+    </div>
+    <div class="p-item">
+      <div class="p-num">4</div>
+      <div class="p-body">
+        <h4>小さなことでも、すぐに連絡します</h4>
+        <p>「このくらいのことで連絡してもいいのか」と思うようなことでも、弊社からすぐにお知らせします。黙って対処するより、早く伝える方が御社も安心できると思うからです。</p>
+      </div>
+    </div>
+    <div class="p-item">
+      <div class="p-num">5</div>
+      <div class="p-body">
+        <h4>長くお付き合いできる関係を、大切にします</h4>
+        <p>毎月の精算書には一言添えます。御社の商品が売れたとき、率直に喜びをお伝えします。沖縄の事業者様と一緒に、お客様の笑顔をつくり続けたいと思っています。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 08. お問い合わせ ===== -->
+<div class="section">
+  <div class="sec-label">SECTION 08</div>
+  <h2>お問い合わせ・次のステップ</h2>
+
+  <div class="contact-hero">
+    <h3>どんな小さなことでも、ご連絡ください</h3>
+    <p>資料についてのご質問・ご不明点は、いつでもお気軽にどうぞ。</p>
+    <div class="contact-grid">
+      <div class="c-item">
+        <div class="c-label">COMPANY</div>
+        <div class="c-val">Plus Canna株式会社</div>
+      </div>
+      <div class="c-item">
+        <div class="c-label">SHOP</div>
+        <div class="c-val">ゆいまーる商店（さくら労働組合OL）</div>
+      </div>
+      <div class="c-item" style="grid-column: 1 / -1;">
+        <div class="c-label">EMAIL</div>
+        <div class="c-val">pluscanna.inc@gmail.com</div>
+      </div>
+    </div>
+    <div class="contact-close">
+      沖縄の本物を、一緒にお届けしましょう。<br>
+      どうぞよろしくお願いいたします。
+    </div>
+  </div>
+
+  <div class="next-steps">
+    <div class="next-step"><div class="ns-num">1</div>本資料の内容をご確認ください</div>
+    <div class="next-step"><div class="ns-num">2</div>取扱商品・卸値・発送方法の詳細をメールでご連絡します</div>
+    <div class="next-step"><div class="ns-num">3</div>原則として、合意書を締結し、商品の掲載・販売開始となります</div>
+  </div>
+</div>
+
+<!-- ===== 注意事項（最終確認） ===== -->
+<div class="section">
+  <div class="notice-box">
+    <div class="notice-title">⚠️ 重要なお知らせ／窓口について</div>
+    <div class="notice-body">
+      <p>
+        弊社（Plus Canna株式会社）は、ゆいまーる商店（さくら労働組合オンラインショップ）の運営企業と<strong>業務提携契約を締結</strong>しており、御社との取引における<strong>唯一の窓口</strong>となっております。
+      </p>
+      <div class="notice-rule">
+        <div class="notice-rule-item bad">
+          <span class="rule-icon">✕</span>
+          <div>
+            <strong>おやめください</strong><br>
+            ゆいまーる商店（さくら労働組合オンラインショップ）へ御社から直接ご連絡いただくこと
+          </div>
+        </div>
+        <div class="notice-rule-item good">
+          <span class="rule-icon">◎</span>
+          <div>
+            <strong>こちらへご連絡ください</strong><br>
+            ご質問・ご相談・緊急連絡はすべて<strong>Plus Canna株式会社</strong>（弊社）へ
+          </div>
+        </div>
+      </div>
+      <p class="notice-sub">
+        なお、弊社と御社の間では<strong>業務委託契約書</strong>を締結させていただく予定です。現在お取引いただく事業者様とは、取引開始後に、直接お会いするか、オンライン署名にてご対応いただく形を考えております。どうぞよろしくお願いいたします。
+      </p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
