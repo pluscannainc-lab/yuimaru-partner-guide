@@ -164,13 +164,7 @@
     page-break-inside: avoid;
   }
 
-  .sec-label {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: var(--amber);
-    margin-bottom: 8px;
-  }
+  .sec-label { display: none; }
 
   .section h2 {
     font-size: clamp(19px, 3vw, 30px);
@@ -178,6 +172,25 @@
     color: var(--blue);
     margin-bottom: 10px;
     line-height: 1.35;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .sec-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--blue);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    min-width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    padding: 0 8px;
+    flex-shrink: 0;
+    letter-spacing: 0;
   }
 
   .section-lead {
@@ -734,8 +747,7 @@
 
 <!-- ===== 01. 私たちについて ===== -->
 <div class="section">
-  <div class="sec-label">SECTION 01</div>
-  <h2>私たちについて</h2>
+  <h2><span class="sec-num">01</span>私たちについて</h2>
   <p class="section-lead">Plus Canna株式会社は、さくら労働組合の会員様向けオンラインショッピングサービスに「ゆいまーる商店」として出店しています。沖縄の事業者様の商品を、全国の会員様へお届けすることを使命としています。</p>
 
   <div class="card-grid">
@@ -764,8 +776,7 @@
 
 <!-- ===== 02. お取引の仕組み ===== -->
 <div class="section">
-  <div class="sec-label">SECTION 02</div>
-  <h2>お取引の仕組み</h2>
+  <h2><span class="sec-num">02</span>お取引の仕組み</h2>
   <p class="section-lead">弊社は商品を在庫として持ちません。お客様からご注文が入ると、弊社が御社へ発送指示をお送りし、御社から直接お客様へ発送していただく形です（ドロップシッピング型）。</p>
 
   <div class="flow">
@@ -816,8 +827,7 @@
 
 <!-- ===== 03. お金の流れ ===== -->
 <div class="section">
-  <div class="sec-label">SECTION 03</div>
-  <h2>お金の流れ</h2>
+  <h2><span class="sec-num">03</span>お金の流れ</h2>
   <p class="section-lead">御社から請求書をいただく必要はありません。弊社が毎月「精算報告書」を作成してお送りし、卸値（仕入れ価格）を御社の口座へ振り込む形です。</p>
 
   <div class="money-chain">
@@ -849,8 +859,7 @@
 
 <!-- ===== 04. 発送依頼の方法 ===== -->
 <div class="section">
-  <div class="sec-label">SECTION 04</div>
-  <h2>発送依頼の方法</h2>
+  <h2><span class="sec-num">04</span>発送依頼の方法</h2>
   <p class="section-lead">ご注文が入るたびに、弊社から下記のフォーマットで発送指示メールをお送りします。毎回同じ形式ですので、慣れると簡単です。</p>
 
   <div class="template-wrap">
@@ -908,8 +917,7 @@
 
 <!-- ===== 05. 月次精算の仕組み ===== -->
 <div class="section">
-  <div class="sec-label">SECTION 05</div>
-  <h2>月次精算の仕組み</h2>
+  <h2><span class="sec-num">05</span>月次精算の仕組み</h2>
   <p class="section-lead">毎月末に弊社が精算報告書を作成してお送りします。内容をご確認いただくだけで完了です。請求書の作成・送付は不要です。</p>
 
   <div class="template-label" style="margin-top: 8px;">▼ 精算報告書（見本）</div>
@@ -943,8 +951,7 @@ Plus Canna株式会社</div>
 
 <!-- ===== 06. 困ったときは ===== -->
 <div class="section">
-  <div class="sec-label">SECTION 06</div>
-  <h2>困ったときは</h2>
+  <h2><span class="sec-num">06</span>困ったときは</h2>
   <p class="section-lead">どんな状況でも、まずは弊社へご連絡ください。お客様への対応はすべてPlus Cannaが行います。御社がお客様に直接対応する必要はありません。</p>
 
   <div class="ex-table-wrap">
@@ -987,8 +994,7 @@ Plus Canna株式会社</div>
 
 <!-- ===== 07. 大切にしていること ===== -->
 <div class="section">
-  <div class="sec-label">SECTION 07</div>
-  <h2>私たちが大切にしていること</h2>
+  <h2><span class="sec-num">07</span>私たちが大切にしていること</h2>
   <p class="section-lead">御社との関係は、一回きりの取引ではありません。長くお付き合いできる仕組みをつくるために、以下のことを大切にしています。</p>
 
   <div class="principle-list">
@@ -1032,8 +1038,7 @@ Plus Canna株式会社</div>
 
 <!-- ===== 08. お問い合わせ ===== -->
 <div class="section">
-  <div class="sec-label">SECTION 08</div>
-  <h2>お問い合わせ・次のステップ</h2>
+  <h2><span class="sec-num">08</span>お問い合わせ・次のステップ</h2>
 
   <div class="contact-hero">
     <h3>どんな小さなことでも、ご連絡ください</h3>
